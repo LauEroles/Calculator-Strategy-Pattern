@@ -1,0 +1,61 @@
+@startuml calculator
+title class diagram - Calculadora
+
+
+
+interface IOperationStrategy{
+    + execute(a: double, b: double):double
+}
+
+
+class AdditionStrategy implements IOperationStrategy{
+    + execute(a: double, b: double): double
+}
+
+class SubstractionSrtategy implements IOperationStrategy{
+    + execute(a: double, b: double): double
+}
+
+class MultiplicationStrategy implements IOperationStrategy{
+    + execute(a: double, b: double): double
+}
+
+class DivisionStrategy implements IOperationStrategy{
+    + execute(a: double, b: double): double
+}
+
+interface IMemoryStorage{
+    + save(value: double): void
+    + recall(): double
+}
+
+class MemoryStorage implements IMemoryStorage{
+    - memory: double
+    + save(value: double): void /'Save one value on memory'/
+    + recall(): double /'Return the saved value on memory'/
+}
+
+class MemoryCache implements IMemoryStorage{
+    - memory: double
+    + save(value: double): void /'Save a set of values on memory'/
+    + recall(): double /'Return a historial of values saved on memory'/
+}
+
+
+class Calculator{
+
+    - operationStrategy: IOperationStrategy
+    - memoryStorage: IMemoryStorage
+    + setOperationStrategy(strategy: IOperationStrategy): void
+    + setMemoryStorage(storage: IMemoryStorage): void
+    + calculate(a: double, b: double): double
+    
+}
+
+'Relationships
+
+Calculator *-> IOperationStrategy : uses
+Calculator *--> IMemoryStorage : uses
+
+
+@enduml
