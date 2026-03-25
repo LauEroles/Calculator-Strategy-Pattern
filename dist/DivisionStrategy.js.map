@@ -1,1 +1,0 @@
-{"version":3,"file":"DivisionStrategy.js","sourceRoot":"","sources":["../src/DivisionStrategy.ts"],"names":[],"mappings":";;;AAEA,MAAa,gBAAgB;IAEzB,OAAO,CAAC,CAAS,EAAE,CAAS;QACxB,IAAI,CAAC,KAAK,CAAC,EAAE;YACT,MAAM,IAAI,KAAK,CAAC,kCAAkC,CAAC,CAAC;SACvD;QACD,OAAO,CAAC,GAAG,CAAC,CAAC;IACjB,CAAC;CACJ;AARD,4CAQC"}

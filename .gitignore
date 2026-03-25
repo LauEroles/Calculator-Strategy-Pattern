@@ -1,0 +1,6 @@
+node_modules/
+dist/
+calculadora.db
+.DS_Store
+*.png
+frontend/node_modules/

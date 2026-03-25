@@ -1,1 +1,0 @@
-{"version":3,"file":"MemoryStorage.js","sourceRoot":"","sources":["../src/MemoryStorage.ts"],"names":[],"mappings":";;;AAEA,MAAa,aAAa;IAEd,KAAK,GAAQ,CAAC,CAAC;IAEvB,IAAI,CAAC,KAAY;QACb,IAAI,CAAC,KAAK,GAAC,KAAK,CAAC;IAErB,CAAC;IACD,MAAM;QACF,OAAO,IAAI,CAAC,KAAK,CAAC;IACtB,CAAC;CAEJ;AAZD,sCAYC"}
